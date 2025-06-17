@@ -1,0 +1,29 @@
+class Student1{
+	String name;
+	int id;
+	int eng;
+	int maths;
+	int sci;
+	int soc;
+	int rank;
+	public void details(){
+		System.out.println("Name :"+name);
+		System.out.println("Id :"+id);
+		System.out.println("Englist :"+eng);
+		System.out.println("Maths :"+maths);
+		System.out.println("Science :"+sci);
+		System.out.println("Social :"+soc);
+	}
+	public int total(){
+		int total=eng+maths+sci+soc;
+			return total;
+	}
+	/*public double percentage(){
+		int total=total();
+		double percentage=(total*100)/400;
+			return percentage;
+			
+	}*/
+}
+		
+			

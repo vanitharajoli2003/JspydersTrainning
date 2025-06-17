@@ -1,0 +1,35 @@
+class School1{
+	public static void main(String[] args){
+		Student1 s1=new Student1();
+		s1.name="Vanitha";
+		s1.id=121;
+		s1.eng=78;
+		s1.maths=90;
+		s1.sci=85;
+		s1.soc=88;
+		s1.details();
+		s1.total();
+		//s1.percentage();
+		Student1 s2=new Student1();
+		s2.name="preethi";
+		s2.id=124;
+		s2.eng=97;
+		s2.maths=87;
+		s2.sci=85;
+		s2.soc=66;
+		s2.details();
+		s2.total();
+		//s2.percentage();
+		Student1 s3=new Student1();
+		s3.name="jeevan";
+		s3.id=123;
+		s3.eng=66;
+		s3.maths=90;
+		s3.sci=95;
+		s3.soc=94;
+		s3.details();
+		s3.total();
+		//s3.percentage();
+	}
+}
+		

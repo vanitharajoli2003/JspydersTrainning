@@ -1,0 +1,7 @@
+class Rectangle{
+	int length;
+	int breadth;
+	public static void details(){
+		System.out.println("Area of rectangle :"+(length*breadth));
+	}
+}

@@ -1,0 +1,55 @@
+class ShowRoom{
+	public static void main(String[] args){
+		Car c1=new Car();
+		c1.brand="Thar";
+		c1.color="Black";
+		c1.prize=3500000;
+		c1.topspeed=150;
+		Car c2=new Car();
+		c2.brand="TATA";
+		c2.color="Gold";
+		c2.prize=1000000;
+		c2.topspeed=180;
+		Car c3=new Car();
+		c3.brand="Sujuki";
+		c3.color="Brown";
+		c3.prize=30000000;
+		c3.topspeed=200;
+	    Car max=max(c1,c2,c3);
+		Car min=min(c1,c2,c3);
+		Car secMax=secMax(c1,c2,c3);
+		min.details();
+		System.out.println("**************************");
+		secMax.details();
+		System.out.println("**************************");
+		max.details();
+		System.out.println("**************************");
+		
+	}
+	public static Car max(Car c1,Car c2,Car c3){
+		if(c1.prize>c2.prize && c1.prize>c3.prize)
+			return c1;
+		else if(c2.prize>c3.prize)
+			return c2;
+		else
+			return c3;
+	}
+	public static Car min(Car c1,Car c2,Car c3){
+		if(c1.prize<c2.prize && c1.prize<c3.prize)
+			return c1;
+		else if(c2.prize<c3.prize)
+			return c2;
+		else
+			return c3;
+	
+	}
+	public static Car secMax(Car c1,Car c2,Car c3){
+		Car max=max(c1,c2,c3);
+		car min=min(c1,c2,c3);
+		if(c1.prize<max.prize && c1.prize>min.prize)
+			return c1;
+		else if(c2.prize<max.prize && c2.prize>min.prize)
+			return c2;
+		return c3;
+	}
+}

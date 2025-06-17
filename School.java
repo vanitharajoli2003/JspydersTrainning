@@ -1,0 +1,16 @@
+class School{
+	public static void main(String[] args){
+		Student s1=new Student();
+		s1.name="Vinni";
+		s1.id=517;
+		s1.marks=47;
+		s1.branch="gutta";
+		s1.gender="Female";
+		s1.age=17;
+		s1.details();
+		s1.attendinClass();
+		s1.studying();
+		s1.goingHome();
+		s1.sleeping();
+	}
+}
